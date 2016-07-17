@@ -4,7 +4,6 @@
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -25,6 +24,9 @@
       <linkFlags>
         <li>PowerConduit</li>
       </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
     </graphicData>
     <blueprintGraphicData>
       <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
@@ -62,10 +64,12 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
-    <designationHotKey>U</designationHotKey>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -80,11 +84,14 @@
       <linkFlags>
         <li>PowerConduit</li>
       </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
     </graphicData>
     <blueprintGraphicData>
       <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
     </blueprintGraphicData>
-    <uiIconPath>Things/Building/Linked/PowerConduitHidden_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
     <building>
       <isInert>true</isInert>
       <ignoreNeedsPower>true</ignoreNeedsPower>
@@ -117,9 +124,11 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Buildings>
