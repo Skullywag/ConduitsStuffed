@@ -18,7 +18,7 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Linked/StuffedPowerConduit_Atlas</texPath>
+      <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Transmitter</linkType>
       <linkFlags>
@@ -42,7 +42,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>35</WorkToMake>
+      <WorkToBuild>35</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-2</Beauty>
     </statBases>
@@ -64,8 +64,10 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc1</designationHotKey>
     <researchPrerequisites>
       <li>Electricity</li>
@@ -102,7 +104,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>35</WorkToMake>
+      <WorkToBuild>35</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-2</Beauty>
     </statBases>
