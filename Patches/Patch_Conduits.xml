@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success> 
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Buildings/ThingDef[defName = "PowerConduit"]/costList</xpath>
+      </li>
+      <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>/Buildings/ThingDef[defName = "PowerConduit"]/stuffCategories</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Buildings/ThingDef[defName = "PowerConduit"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Metallic</li>
+              </stuffCategories>
+              <costStuffCount>1</costStuffCount>
+            </value>
+          </li>
+        </operations>
+      </Operation>
+    </operations>
+  </Operation>
+
+</Patch>
+
+
